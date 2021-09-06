@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rlContentArea"
+    android:background="@color/white"
+    tools:context=".LauncherActivity">
+
+    <!-- Splash screen -->
+    <FrameLayout
+        android:id="@+id/layout_splash_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_splash" />
+
+        </RelativeLayout>
+    </FrameLayout>
+
+    <!-- Get started -->
+    <FrameLayout
+        android:id="@+id/layout_get_started"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_get_started"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <!-- Toolbar -->
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/ic_roaddo" />
+
+            <com.view.MTextView
+                android:id="@+id/get_started"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_7ssp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="26sp"
+                app:customTypeFace="@string/systemBold"
+                tools:text="Your Online Directory for Shops and Services." />
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_16sdp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/get_started_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:layout_marginBottom="@dimen/_30sdp"
+                    android:background="@drawable/rounded_shape"
+                    android:stateListAnimator="@null"
+                    android:textAllCaps="false"
+                    tools:text="Get Started"
+                    android:textColor="@color/appThemeColor_1"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <!-- Enable location -->
+    <FrameLayout
+        android:id="@+id/layout_enable_location"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.view.MTextView
+                android:id="@+id/enable_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="26sp"
+                app:customTypeFace="@string/systemBold"
+                tools:text="Enable your location" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/location_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/enable_location"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_80sdp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_location_slide" />
+
+            <com.view.MTextView
+                android:id="@+id/enable_location_sub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/location_image"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="#9FA5C0"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                tools:text="We will use it to show you nearby vendors and give you a tailored experience." />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/activate_gps_button"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/enable_location_sub"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:layout_marginBottom="@dimen/_16sdp"
+                android:background="@drawable/activate_gps_splash"
+                android:elevation="@dimen/_10sdp"
+                android:textAllCaps="false"
+                tools:text="Activate GPS"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/not_now_button"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/activate_gps_button"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:background="@drawable/not_now_splash"
+                android:elevation="@dimen/_10sdp"
+                android:textAllCaps="false"
+                tools:text="Not Now"
+                android:textColor="@color/appThemeColor_1"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </FrameLayout>
+
+
+</RelativeLayout>

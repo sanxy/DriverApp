@@ -1,0 +1,187 @@
+{
+  "project_info": {
+    "project_number": "220019578097",
+    "firebase_url": "https://pragmatic-star-269313.firebaseio.com",
+    "project_id": "pragmatic-star-269313",
+    "storage_bucket": "pragmatic-star-269313.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:220019578097:android:ff4781681b883688c18550",
+        "android_client_info": {
+          "package_name": "com.roaddo.client"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "220019578097-obekhhr2s0fb2prbkerejivr5dlb0t0e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.roaddo.client",
+            "certificate_hash": "1297a618696289469616ee9642de2a6f2a08dd36"
+          }
+        },
+        {
+          "client_id": "220019578097-4ricjgirl3dfn1pmtqi2bhj102j6ab2b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA02eswD6zhLS4cSJoFRMM4W554dDn0Fwo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "220019578097-4ricjgirl3dfn1pmtqi2bhj102j6ab2b.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "220019578097-jvj0m34pakmbmp1p8mjbg84evu3b0ufh.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.roaddo.provider"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:220019578097:android:0eae3487018bb6ccc18550",
+        "android_client_info": {
+          "package_name": "com.roaddo.kiosk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "220019578097-b5qpg019s3ut3fvihvlm074chcv3lo3u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.roaddo.kiosk",
+            "certificate_hash": "1297a618696289469616ee9642de2a6f2a08dd36"
+          }
+        },
+        {
+          "client_id": "220019578097-4ricjgirl3dfn1pmtqi2bhj102j6ab2b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA02eswD6zhLS4cSJoFRMM4W554dDn0Fwo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "220019578097-4ricjgirl3dfn1pmtqi2bhj102j6ab2b.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "220019578097-jvj0m34pakmbmp1p8mjbg84evu3b0ufh.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.roaddo.provider"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:220019578097:android:2b01084eb6de5e65c18550",
+        "android_client_info": {
+          "package_name": "com.roaddo.provider"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "220019578097-ovm0salgm0nv0ed18euiaq6k7n6q3d45.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.roaddo.provider",
+            "certificate_hash": "1297a618696289469616ee9642de2a6f2a08dd36"
+          }
+        },
+        {
+          "client_id": "220019578097-4ricjgirl3dfn1pmtqi2bhj102j6ab2b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA02eswD6zhLS4cSJoFRMM4W554dDn0Fwo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "220019578097-4ricjgirl3dfn1pmtqi2bhj102j6ab2b.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "220019578097-jvj0m34pakmbmp1p8mjbg84evu3b0ufh.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.roaddo.provider"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:220019578097:android:774436b2d23503d4c18550",
+        "android_client_info": {
+          "package_name": "com.roaddo.store"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "220019578097-o83qb4iguaib7fuu2rq4cttkpfi0ufto.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.roaddo.store",
+            "certificate_hash": "1297a618696289469616ee9642de2a6f2a08dd36"
+          }
+        },
+        {
+          "client_id": "220019578097-4ricjgirl3dfn1pmtqi2bhj102j6ab2b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA02eswD6zhLS4cSJoFRMM4W554dDn0Fwo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "220019578097-4ricjgirl3dfn1pmtqi2bhj102j6ab2b.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "220019578097-jvj0m34pakmbmp1p8mjbg84evu3b0ufh.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.roaddo.provider"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
