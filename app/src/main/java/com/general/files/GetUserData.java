@@ -7,6 +7,7 @@ import androidx.core.app.ActivityCompat;
 
 import com.roaddo.provider.AppLoginActivity;
 import com.roaddo.provider.BuildConfig;
+import com.utils.Logger;
 import com.utils.Utils;
 import com.view.GenerateAlertBox;
 
@@ -51,6 +52,8 @@ public class GetUserData {
         exeWebServer.setCancelAble(false);
         exeWebServer.setDataResponseListener(responseString -> {
             JSONObject responseStringObject=generalFunc.getJsonObject(responseString);
+
+            Logger.d("CabRequestedActivity", "getData responseStringObject: "+ responseStringObject);
 
             if (responseStringObject != null && !responseStringObject.equals("")) {
 
@@ -126,6 +129,8 @@ public class GetUserData {
         exeWebServer.setDataResponseListener(responseString -> {
 
             JSONObject responseObj=generalFunc.getJsonObject(responseString);
+
+            Logger.d("CabRequestedActivity", "GetUserData responseObj: "+ responseObj);
 
 
             if (responseObj != null && !responseObj.equals("")) {

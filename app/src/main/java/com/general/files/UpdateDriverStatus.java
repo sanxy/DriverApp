@@ -82,7 +82,7 @@ public class UpdateDriverStatus extends Service implements UpdateFrequentTask.On
         ExecuteWebServerUrl exeWebServer = new ExecuteWebServerUrl(getApplicationContext(), parameters);
         this.currentExeTask = exeWebServer;
         exeWebServer.setDataResponseListener(responseString -> {
-
+            Logger.d("CabRequestedActivity", "Update Driver Status responseObj: "+ responseString);
         });
         exeWebServer.execute();
     }

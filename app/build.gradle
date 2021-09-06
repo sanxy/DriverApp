@@ -10,9 +10,9 @@ android {
     }
     signingConfigs {
         config {
-            keyAlias 'com.roaddo'
+            keyAlias 'roaddo'
             keyPassword '123456'
-            storeFile file('com.roaddo.jks')
+            storeFile file('roaddo.jks')
             storePassword '123456'
         }
     }
@@ -33,7 +33,7 @@ android {
     compileSdkVersion 29
     buildToolsVersion '28.0.3'
     defaultConfig {
-        applicationId "com.com.roaddo.provider"
+        applicationId "com.roaddo.provider"
         minSdkVersion 17
         targetSdkVersion 29
         versionCode 3

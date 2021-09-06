@@ -169,7 +169,6 @@ public class CabRequestedActivity extends AppCompatActivity implements GenerateA
         generalFunc = MyApp.getInstance().getGeneralFun(getActContext());
         generalFunc.removeValue(Utils.DRIVER_ACTIVE_REQ_MSG_KEY);
 
-
         Toolbar mToolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(mToolbar);
 
@@ -805,6 +804,7 @@ public class CabRequestedActivity extends AppCompatActivity implements GenerateA
             JSONObject responseStringObj = generalFunc.getJsonObject(responseString);
 
             Log.d(TAG, "generateTrip: " + responseStringObj);
+            Logger.d("Fola", "generateTrip: "+ responseStringObj);
 
             if (responseStringObj != null && !responseStringObj.equals("")) {
                 boolean isDataAvail = GeneralFunctions.checkDataAvail(Utils.action_str, responseStringObj);
@@ -909,18 +909,18 @@ public class CabRequestedActivity extends AppCompatActivity implements GenerateA
             parameters.put("ride_type", REQUEST_TYPE);
         }
 
-        Logger.d(TAG, "PassengerId: " + generalFunc.getJsonValue("PassengerId", message_str));
-        Logger.d(TAG, "iCabBookingId: " + generalFunc.getJsonValue("iBookingId", message_str));
-        Logger.d(TAG, "MsgCode: " + generalFunc.getJsonValue("MsgCode", message_str));
-        Logger.d(TAG, "iCabRequestId: " + generalFunc.getJsonValue("iCabRequestId", message_str));
-
-        Logger.d(TAG, "vLatitude: " + userLocation.getLatitude());
-        Logger.d(TAG, "vLongitude: " + userLocation.getLongitude());
-        Logger.d(TAG, "REQUEST_TYPE: " + REQUEST_TYPE);
-        Logger.d(TAG, "PassengerID: " + generalFunc.getJsonValue("PassengerId", message_str));
-        Logger.d(TAG, "start_lat: " + generalFunc.getJsonValue("sourceLatitude", message_str));
-        Logger.d(TAG, "start_lon: " + generalFunc.getJsonValue("sourceLongitude", message_str));
-        Logger.d(TAG, "vMsgCode: " + msgCode);
+//        Logger.d(TAG, "PassengerId: " + generalFunc.getJsonValue("PassengerId", message_str));
+//        Logger.d(TAG, "iCabBookingId: " + generalFunc.getJsonValue("iBookingId", message_str));
+//        Logger.d(TAG, "MsgCode: " + generalFunc.getJsonValue("MsgCode", message_str));
+//        Logger.d(TAG, "iCabRequestId: " + generalFunc.getJsonValue("iCabRequestId", message_str));
+//
+//        Logger.d(TAG, "vLatitude: " + userLocation.getLatitude());
+//        Logger.d(TAG, "vLongitude: " + userLocation.getLongitude());
+//        Logger.d(TAG, "REQUEST_TYPE: " + REQUEST_TYPE);
+//        Logger.d(TAG, "PassengerID: " + generalFunc.getJsonValue("PassengerId", message_str));
+//        Logger.d(TAG, "start_lat: " + generalFunc.getJsonValue("sourceLatitude", message_str));
+//        Logger.d(TAG, "start_lon: " + generalFunc.getJsonValue("sourceLongitude", message_str));
+//        Logger.d(TAG, "vMsgCode: " + msgCode);
 
         return parameters;
     }
